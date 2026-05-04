@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agendamento Realizado</title>
+</head>
+<body>
+
+    <h1>Agendamento realizado com sucesso!</h1>
+
+    <h2>Dados do paciente</h2>
+    <p>Nome: <%= data.nome %> <%= data.sobrenome %></p>
+    <p>CPF: <%= data.cpf %></p>
+    <p>Data de nascimento: <%= data.nascimento %></p>
+    <p>Telefone: <%= data.telefone %></p>
+    <p>CEP: <%= data.cep %></p>
+    <p>Endereço: <%= data.endereco %></p>
+
+    <h2>Dados da consulta</h2>
+    <p>Clínica: <%= data.clinica %></p>
+    <p>Especialidade: <%= data.especialidade %></p>
+    <p>Observação: <%= data.observacao %></p>
+    <p>Data e hora: <%= data.dataHora %></p>
+
+    <br>
+    <a href="/">Novo agendamento</a>
+
+</body>
+</html>

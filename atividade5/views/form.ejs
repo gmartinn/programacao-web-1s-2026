@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agendamento</title>
+</head>
+<body>
+    <h1>Formulário de Agendamento</h1>
+
+    <% if (errors.length > 0) { %>
+        <ul style="color:red;">
+            <% errors.forEach(error => { %>
+                <li><%= error %></li>
+            <% }) %>
+        </ul>
+    <% } %>
+
+    <form action="/agendamento" method="POST">
+
+        <h2>Dados do paciente</h2>
+
+        <input type="text" name="nome" placeholder="Nome" value="<%= data.nome || '' %>"><br>
+        <input type="text" name="sobrenome" placeholder="Sobrenome" value="<%= data.sobrenome || '' %>"><br>
+        <input type="text" name="cpf" placeholder="CPF" value="<%= data.cpf || '' %>"><br>
+        <input type="date" name="nascimento" value="<%= data.nascimento || '' %>"><br>
+        <input type="text" name="telefone" placeholder="Telefone" value="<%= data.telefone || '' %>"><br>
+        <input type="text" name="cep" placeholder="CEP" value="<%= data.cep || '' %>"><br>
+        <input type="text" name="endereco" placeholder="Endereço" value="<%= data.endereco || '' %>"><br>
+
+        <h2>Dados da consulta</h2>
+
+        <input type="text" name="clinica" placeholder="Clínica" value="<%= data.clinica || '' %>"><br>
+        <input type="text" name="especialidade" placeholder="Especialidade" value="<%= data.especialidade || '' %>"><br>
+        <textarea name="observacao" placeholder="Observação"><%= data.observacao || '' %></textarea><br>
+        <input type="datetime-local" name="dataHora" value="<%= data.dataHora || '' %>"><br><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
