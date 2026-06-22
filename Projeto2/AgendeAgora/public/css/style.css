@@ -1,0 +1,128 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Containers de Telas */
+.container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 450px;
+}
+
+.container-dashboard {
+    max-width: 900px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #f3b51a; /* Amarelo do Protótipo */
+}
+
+/* Formulários */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #2a2a2a;
+    border: 1px solid #3d3d3d;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+}
+
+input:focus, select:focus {
+    border-color: #f3b51a;
+    outline: none;
+}
+
+/* Botões */
+button, .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #f3b51a;
+    border: none;
+    border-radius: 6px;
+    color: #121212;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background-color: #dca316;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+.btn-danger:hover { background-color: #c0392b; }
+
+/* Grid do Dashboard */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .dashboard-grid { grid-template-columns: 1fr; }
+}
+
+/* Lista de Agendamentos (Cards) */
+.agendamento-card {
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #f3b51a;
+}
+
+.agendamento-info p {
+    margin-bottom: 4px;
+}
+
+.agendamento-acoes button {
+    width: auto;
+    padding: 6px 12px;
+    font-size: 13px;
+    margin-left: 5px;
+}

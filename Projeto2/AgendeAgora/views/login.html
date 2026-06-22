@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>AgendeAgora - Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>AgendeAgora</h2>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label>E-mail</label>
+                <input type="email" name="email" required placeholder="seu@email.com">
+            </div>
+            <div class="form-group">
+                <label>Senha</label>
+                <input type="password" name="senha" required placeholder="••••••••">
+            </div>
+            <button type="submit">ENTRAR</button>
+        </form>
+        <p style="margin-top: 15px; text-align: center; font-size: 14px;">
+            Não tem conta? <a href="/cadastro.html" style="color: #f3b51a;">Cadastre-se</a>
+        </p>
+    </div>
+</body>
+</html>

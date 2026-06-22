@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>AgendeAgora - Cadastro</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Criar Conta</h2>
+        <form action="/cadastrar" method="POST">
+            <div class="form-group">
+                <label>Nome Completo</label>
+                <input type="text" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label>E-mail</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Telefone</label>
+                <input type="text" name="telefone" required placeholder="(00) 00000-0000">
+            </div>
+            <div class="form-group">
+                <label>Senha</label>
+                <input type="password" name="senha" required>
+            </div>
+            <div class="form-group">
+                <label>Tipo de Perfil</label>
+                <select name="tipo">
+                    <option value="cliente">Cliente</option>
+                    <option value="barbeiro">Barbeiro</option>
+                </select>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p style="margin-top: 15px; text-align: center; font-size: 14px;">
+            Já possui conta? <a href="/login.html" style="color: #f3b51a;">Faça login</a>
+        </p>
+    </div>
+</body>
+</html>
